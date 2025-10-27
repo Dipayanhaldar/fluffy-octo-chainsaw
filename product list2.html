@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Product List Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    crossorigin="anonymous" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h3 {
+      color: #222;
+    }
+
+    .navbar-brand img {
+      width: 120px;
+    }
+
+    .single_product {
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+
+    .single_product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .footer_section {
+      background-color: #222;
+      color: #eee;
+    }
+
+    .footer_section a {
+      color: #ffce54;
+      text-decoration: none;
+    }
+
+    .footer_section a:hover {
+      color: #fff;
+    }
+
+    .backtop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .badge-primary {
+      background-color: #ff6600;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Navbar -->
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <a class="navbar-brand pl-5" href="#">
+          <img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="file:///C:/Users/HI/Downloads/index1.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20list2.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/catagory%20page4.html#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20view3.html#">Product Detail</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li>
+          </ul>
+          <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+              <span class="badge badge-pill badge-primary">24</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!------------Product------------>
+
+ <section class="products py-5 my-5" id="products"> 
+        <div class="container "> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">Products</h1> 
+            </div> 
+            <div class="row"> 
+                <div class="col-md-3 border-right mb-small-5"> 
+                    <h4 class="mb-5 border-bottom">Filters</h4> 
+                    <div class="mb-5"> 
+                        <label><b>Category</b></label> 
+                        <ul class="list-group"> 
+                            <li class="list-group-item">Womens Wear</li> 
+                            <li class="list-group-item">Mens Wear</li> 
+                            <li class="list-group-item">Kids Collection</li> 
+                            <li class="list-group-item">Gadgets</li> 
+                            <li class="list-group-item">Appliances</li> 
+                        </ul> 
+                    </div> 
+                    <div> 
+                        <form> 
+                            <div class="form-group"> 
+                                <label><b>Price</b></label> 
+                                <input type="range" min="100" max="10000" step="100" 
+class="form-control-range"> 
+                            </div> 
+                        </form> 
+                        <div class="d-flex justify-content-between"> 
+                            <label>100</label> 
+                            <label>₹10000</label> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-md-9"> 
+ 
+                    <div class="row mb-5"> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="https://www.bing.com/images/search?view=detailV2&ccid=kMBL6B9J&id=D4C398F4E3CE3FA9C7C45EF51F3288EFF51564DE&thid=OIP.kMBL6B9J74negvbE85Zm1gHaIJ&mediaurl=https%3a%2f%2fwww.code-zero.com%2fuploads%2fmedia%2f23%2f16%2f41%2f1671112296%2fzip-up-hoodie-men-university-college-style-hood-red.jpg&exph=1760&expw=1600&q=red+hoodie+men&FORM=IRPRST&ck=410968FBE893AF5B7148E2EC35E40491&selectedIndex=6&itb=0"><img 
+src="https://i0.wp.com/cuttongarments.com/wp-content/uploads/2017/12/12red.png?fit=1000%2C1250&ssl=1" class="img img-fluid" 
+                                            alt=""></a> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://www.bing.com/images/search?view=detailV2&ccid=kMBL6B9J&id=D4C398F4E3CE3FA9C7C45EF51F3288EFF51564DE&thid=OIP.kMBL6B9J74negvbE85Zm1gHaIJ&mediaurl=https%3a%2f%2fwww.code-zero.com%2fuploads%2fmedia%2f23%2f16%2f41%2f1671112296%2fzip-up-hoodie-men-university-college-style-hood-red.jpg&exph=1760&expw=1600&q=red+hoodie+men&FORM=IRPRST&ck=410968FBE893AF5B7148E2EC35E40491&selectedIndex=6&itb=0">Red Hoodie  
+Details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>799</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1 mt-small-5 
+mb-small-5"> 
+                                <div class="product_img"> 
+                                    <a href="https://www.bing.com/images/search?view=detailV2&ccid=im0rwIDN&id=ABDF1F76F2319A00992A49234B7095B411BC6F38&thid=OIP.im0rwIDNEYbw1ChmcdZy2QHaLH&mediaurl=https%3a%2f%2fmedia.boohoo.com%2fi%2fboohoo%2fbmm20524_ice+blue_xl%2fmale-ice+blue-oversized-denim-hoodie%2f%3fw%3d900%26qlt%3ddefault%26fmt.jp2.qlt%3d70%26fmt%3dauto%26sm%3dfit&exph=1350&expw=900&q=boohoo+media+blue+oversized+hoodie&FORM=IRPRST&ck=03FAFF2CB697CBF575466FD1C5E4824B&selectedIndex=17&itb=0"><img 
+src="https://media.boohoo.com/i/boohoo/bmm20524_ice%20blue_xl/male-ice%20blue-oversized-denim-hoodie/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit" class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+ 
+                                        <span class="badge py-2 px-3 badge-pill 
+badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://www.bing.com/images/search?view=detailV2&ccid=im0rwIDN&id=ABDF1F76F2319A00992A49234B7095B411BC6F38&thid=OIP.im0rwIDNEYbw1ChmcdZy2QHaLH&mediaurl=https%3a%2f%2fmedia.boohoo.com%2fi%2fboohoo%2fbmm20524_ice+blue_xl%2fmale-ice+blue-oversized-denim-hoodie%2f%3fw%3d900%26qlt%3ddefault%26fmt.jp2.qlt%3d70%26fmt%3dauto%26sm%3dfit&exph=1350&expw=900&q=boohoo+media+blue+oversized+hoodie&FORM=IRPRST&ck=03FAFF2CB697CBF575466FD1C5E4824B&selectedIndex=17&itb=0">Blue Hoodie with 
+details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>400</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="https://sl.bing.net/gpFktlJRGjA"><img 
+src="https://images.wehkamp.nl/i/wehkamp/17125295_pb_01/indian-blue-jeans-hoodie-met-printopdruk-groen-groen-8718974645036.jpg?w=1024&h=1536&qlt=75&fit=contain" class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill 
+badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+ 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://sl.bing.net/gpFktlJRGjA">Dark Green Dress with 
+details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>300</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="row"> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="https://sl.bing.net/xvbSGbAMk8"><img 
+               src="https://image.hm.com/assets/hm/2a/9f/2a9fd5159b7c8f8bffad60e2c067cb979db98e7c.jpg?imwidth=564"
+ class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill 
+badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+ 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://sl.bing.net/xvbSGbAMk8">Blue Dress with 
+details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>1000</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1 mt-small-5 
+mb-small-5"> 
+                                <div class="product_img"> 
+                                    <a href="https://sl.bing.net/j3WDsXXZyUK"><img 
+src="https://images.wehkamp.nl/i/wehkamp/16318487_pb_01/indian-blue-jeans-hoodie-met-tekst-geel-geel-8718974330499.jpg?w=1024&h=1536&qlt=75&fit=contain" class="img img-fluid" 
+                                            alt=""></a> 
+                                    <div class="new_product"> 
+                                        <span class="badge py-2 px-3 badge-pill 
+badge-danger">New</span> 
+                                    </div> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://sl.bing.net/j3WDsXXZyUK">Yellow dress with 
+details</a></h5> 
+                                    <div class="price"> 
+ 
+                                        <b><span class="mr-1">₹</span><span>4000</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col-md-4 col-12"> 
+                            <div class="single_product shadow text-center p-1"> 
+                                <div class="product_img"> 
+                                    <a href="https://sl.bing.net/kvY0nSQPmWy"><img 
+src="https://tse3.mm.bing.net/th/id/OIP.EOdRlKypXySrOcdB4H5UTQHaLH?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" class="img img-fluid" 
+                                            alt=""></a> 
+                                </div> 
+                                <div class="product-caption my-3"> 
+                                    <div class="product-ratting"> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="fas fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                        <i class="far fa-star"></i> 
+                                    </div> 
+                                    <h5><a href="https://sl.bing.net/kvY0nSQPmWy">Violet Dress  with 
+details</a></h5> 
+                                    <div class="price"> 
+                                        <b><span class="mr-1">₹</span><span>2999</span></b> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+<!-- ==============product ends here============== -->
+
+
+<!-- ==============feature starts here============== --> 
+  <section class="feature py-5 mt-5" id="feature"> 
+    <div class="container"> 
+      <div class="section_title text-center mb-5"> 
+        <h1 class="text-capitalize">Our Features</h1> 
+      </div> 
+      <div class="row text-blue"> 
+        <div class="col-md-4 col-12 shadow p-3"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-shipping-fast fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>Free Shipping Method</h3> 
+              </div> 
+            </div> 
+            <div> 
+               
+            </div> 
+          </div> 
+        </div> 
+        <div class="col-md-4 col-12 shadow p-3 mt-small-5 mb-small-5"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-lock fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>Secure Payment System</h3> 
+              </div> 
+            </div> 
+            <div> 
+             
+            </div> 
+          </div> 
+        </div> 
+        <div class="col-md-4 col-12 shadow p-3"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-headphones fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>24/7 Support</h3> 
+              </div> 
+            </div> 
+            <div> 
+               
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+ 
+  <!-- ==============feature ends here============== -->
+
+
+
+  <!-- ==============footer starts here============== --> 
+  <section class="footer_section pt-5 pb-2" id="footer_section"> 
+    <footer> 
+      <div class="container-fluid"> 
+        <div class="row">  
+          <div class="col-md-3 col-6 pl-5 pl-small-15"> 
+            <div class="footer_title"> 
+              <a href="index.html"><img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" width="150px" 
+class="img https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo"></a> 
+            </div> 
+            <div> 
+               ratna is a top branded ecommerce store since 1987 continuos to provide the best clothing and applicences and helping bharat to move forward. 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Quick Links</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About</a></li> 
+                <li><a href="javascript:;">Offers & Discounts</a></li> 
+                <li><a href="javascript:;">Get Coupon</a></li> 
+                <li><a href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>New Products</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Woman Cloth</a></li> 
+                <li><a href="javascript:;">Fashion Accessories</a></li> 
+                <li><a href="javascript:;">Man Accessories</a></li> 
+                <li><a href="javascript:;">Rubber made Toys</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Support</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Frequently Asked Questions</a></li> 
+                <li><a href="javascript:;">Terms & Conditions</a></li> 
+                <li><a href="javascript:;">Privacy Policy</a></li> 
+                <li><a href="javascript:;">Report a Payment Issue</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="border-top"> 
+        <h6 class="text-center mt-3">Copyright ©2025 All rights reserved 
+        </h6> 
+      </div> 
+    </footer> 
+  </section> 
+  <div class="backtop"> 
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button"> 
+      <i class="fas fa-chevron-up text-dark"></i> 
+    </a> 
+  </div> 
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

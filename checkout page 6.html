@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Checkout page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    crossorigin="anonymous" />
+
+  <style>
+    /* ===== General Styling ===== */
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      color: #f0f0f0;
+    }
+
+    .navbar,
+    .footer_section {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar a {
+      color: #fff !important;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: #00e6e6 !important;
+    }
+
+    .cart span {
+      background-color: #00bfff !important;
+    }
+
+    .section_title h1 {
+      color: #00e6e6;
+      font-weight: 700;
+      text-shadow: 0 3px 10px rgba(0, 230, 230, 0.6);
+    }
+
+    /* ===== Checkout Container ===== */
+    .bg_checkout_1 {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+      border-radius: 20px;
+      padding: 30px;
+      color: #fff;
+    }
+
+    .bg_checkout_1 label {
+      color: #aef1ff;
+      font-weight: 500;
+    }
+
+    .bg_checkout_1 input,
+    .bg_checkout_1 textarea,
+    .bg_checkout_1 select {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+    }
+
+    .bg_checkout_1 input::placeholder,
+    .bg_checkout_1 textarea::placeholder {
+      color: #cccccc;
+    }
+
+    .bg_checkout_1 input:focus,
+    .bg_checkout_1 textarea:focus,
+    .bg_checkout_1 select:focus {
+      border-color: #00e6e6;
+      box-shadow: 0 0 5px rgba(0, 230, 230, 0.6);
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #00b4db, #0083b0);
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.4s ease;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(90deg, #0083b0, #00b4db);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 191, 255, 0.5);
+    }
+
+    .list-group-item {
+      background: transparent;
+      color: #f0f0f0;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .list-group-item strong,
+    #summary strong {
+      color: #00e6e6;
+    }
+
+    /* Footer */
+    .footer_section h3,
+    .footer_section a,
+    .footer_section div,
+    .footer_section li {
+      color: #f0f0f0 !important;
+    }
+
+    .footer_section a:hover {
+      color: #00e6e6 !important;
+    }
+
+    .backtop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .backtop .btn {
+      border-radius: 50%;
+      padding: 10px 14px;
+    }
+  </style>
+</head>
+
+
+  <!-- Navbar -->
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <a class="navbar-brand pl-5" href="#">
+          <img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="file:///C:/Users/HI/Downloads/index1.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20list2.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/catagory%20page4.html#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20view3.html#">Product Detail</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li>
+          </ul>
+          <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+              <span class="badge badge-pill badge-primary">24</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+<body id="top">
+
+
+
+  <!-- Checkout Section -->
+  <section class="Checkout py-5 my-5" id="Checkout">
+    <div class="container">
+      <div class="section_title text-center mb-5">
+        <h1 class="text-capitalize">Checkout</h1>
+      </div>
+      <div class="row">
+        <!-- Billing Details -->
+        <div class="col-lg-8 mb-4">
+          <div class="card bg_checkout_1 pb-5">
+            <div class="card-body">
+              <h5 class="mb-4">Billing Details</h5>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" class="form-control" placeholder="Enter first name">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" class="form-control" placeholder="Enter last name">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form18">Phone</label>
+                <input type="number" id="form18" class="form-control" placeholder="Enter phone number">
+              </div>
+
+              <div class="form-group">
+                <label for="form19">Email Address</label>
+                <input type="email" id="form19" class="form-control" placeholder="Enter email">
+              </div>
+
+              <div class="form-group">
+                <label>Country</label>
+                <select class="custom-select form-group">
+                  <option selected>Choose your option</option>
+                  <option>India</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="form14">Address Line 1</label>
+                <input type="text" id="form14" placeholder="House number and street name" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="form15">Address Line 2</label>
+                <input type="text" id="form15" placeholder="Apartment, suite, etc. (optional)" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="form16">Postcode / ZIP</label>
+                <input type="text" id="form16" class="form-control" placeholder="Enter postcode">
+              </div>
+
+              <div class="form-group">
+                <label for="form17">Town / City</label>
+                <input type="text" id="form17" class="form-control" placeholder="Enter city">
+              </div>
+
+              <div class="form-group">
+                <label for="form76">Additional Information</label>
+                <textarea id="form76" class="form-control" rows="4"
+                  placeholder="Any additional notes..."></textarea>
+              </div>
+
+              <div class="text-center mt-4">
+                <a href="file:///C:/Users/HI/Downloads/thankyou.html" class="btn btn-primary px-4">
+                  <i class="fa fa-check mr-2"></i>Purchase
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-lg-4">
+          <div class="bg_checkout_1">
+            <h5 class="mb-3">Order Summary</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Product name 1</span><span>x2</span><span>₹1985.98</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Product name 2</span><span>x2</span><span>₹2555.98</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center border-top mt-3">
+                <div>
+                  <strong>Total Amount</strong>
+                  <p class="mb-0 small">(Including GST 18%)</p>
+                </div>
+                <span><strong>₹4541.96</strong></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ==============footer starts here============== --> 
+  <section class="footer_section pt-5 pb-2" id="footer_section"> 
+    <footer> 
+      <div class="container-fluid"> 
+        <div class="row">  
+          <div class="col-md-3 col-6 pl-5 pl-small-15"> 
+            <div class="footer_title"> 
+              <a href="index.html"><img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" width="150px" 
+class="img https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo"></a> 
+            </div> 
+            <div> 
+               ratna is a top branded ecommerce store since 1987 continuos to provide the best clothing and applicences and helping bharat to move forward. 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Quick Links</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About</a></li> 
+                <li><a href="javascript:;">Offers & Discounts</a></li> 
+                <li><a href="javascript:;">Get Coupon</a></li> 
+                <li><a href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>New Products</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Woman Cloth</a></li> 
+                <li><a href="javascript:;">Fashion Accessories</a></li> 
+                <li><a href="javascript:;">Man Accessories</a></li> 
+                <li><a href="javascript:;">Rubber made Toys</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Support</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Frequently Asked Questions</a></li> 
+                <li><a href="javascript:;">Terms & Conditions</a></li> 
+                <li><a href="javascript:;">Privacy Policy</a></li> 
+                <li><a href="javascript:;">Report a Payment Issue</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="border-top"> 
+        <h6 class="text-center mt-3">Copyright ©2025 All rights reserved 
+        </h6> 
+      </div> 
+    </footer> 
+  </section> 
+  <div class="backtop"> 
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button"> 
+      <i class="fas fa-chevron-up text-dark"></i> 
+    </a> 
+  </div> 
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

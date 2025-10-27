@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Product View Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    crossorigin="anonymous" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1, h3 {
+      color: #222;
+    }
+
+    .navbar-brand img {
+      width: 120px;
+    }
+
+    .single_product {
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+
+    .single_product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .footer_section {
+      background-color: #222;
+      color: #eee;
+    }
+
+    .footer_section a {
+      color: #ffce54;
+      text-decoration: none;
+    }
+
+    .footer_section a:hover {
+      color: #fff;
+    }
+
+    .backtop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .badge-primary {
+      background-color: #ff6600;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- Navbar -->
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <a class="navbar-brand pl-5" href="#">
+          <img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="file:///C:/Users/HI/Downloads/index1.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20list2.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/catagory%20page4.html#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20view3.html#">Product Detail</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li>
+          </ul>
+          <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+              <span class="badge badge-pill badge-primary">24</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+   <!-- ==============product_detail starts here============== --> 
+
+
+    <section class="product_detail py-5 my-5" id="product_detail"> 
+        <div class="container "> 
+            <div class="section_title text-center mb-5"> 
+                <h1 class="text-capitalize">product detail</h1> 
+            </div> 
+            <div class="row"> 
+                <div class="col-md-6"> 
+                    <div class="row"> 
+                        <div class="col-md-12"> 
+                            <div id="carouselExampleIndicators" class="carousel slide shadow 
+rounded" 
+                                data-ride="carousel"> 
+                                <ol class="carousel-indicators"> 
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" 
+class="active"> 
+                                        <img src="https://levi.in/cdn/shop/files/182590045_01_Styleshot.jpg?v=1758711917" class="d-block w-50 
+img img-fluid rounded" 
+                                            width="15px" alt="image"> 
+                                    </li> 
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"> 
+                                        <img src="https://levi.in/cdn/shop/files/002VL0004_01_Elevated.jpg?v=1736839579" class="d-block w-50 
+img img-fluid rounded" 
+                                            width="15px" alt="image"> 
+                                    </li> 
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"> 
+ 
+                                        <img src="https://levi.in/cdn/shop/files/728940067_01_Styleshot.jpg?v=1755845039" class="d-block w-50 
+img img-fluid rounded" 
+                                            width="15px" alt="image"> 
+                                    </li> 
+                                </ol> 
+                                <div class="carousel-inner"> 
+                                    <div class="carousel-item active"> 
+                                        <img src="https://levi.in/cdn/shop/files/182590045_01_Styleshot.jpg?v=1758711917" 
+                                            class="d-block w-100 img img-fluid rounded" alt="image"> 
+                                    </div> 
+                                    <div class="carousel-item"> 
+                                        <img src="https://levi.in/cdn/shop/files/002VL0004_01_Elevated.jpg?v=1736839579" 
+                                            class="d-block w-100 img img-fluid rounded" alt="image"> 
+                                    </div> 
+                                    <div class="carousel-item"> 
+                                        <img src="https://levi.in/cdn/shop/files/728940067_01_Styleshot.jpg?v=1755845039" 
+                                            class="d-block w-100 img img-fluid rounded" alt="image"> 
+                                    </div> 
+                                </div> 
+                               <!--  <a class="carousel-control-prev" 
+href="#carouselExampleIndicators" role="button" data-slide="prev"> 
+                                    <span class="carousel-control-prev-icon" 
+aria-hidden="true"></span> 
+                                    <span class="sr-only">Previous</span> 
+                                </a> 
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" 
+role="button" data-slide="next"> 
+                                    <span class="carousel-control-next-icon" 
+aria-hidden="true"></span> 
+                                    <span class="sr-only">Next</span> 
+                                </a> --> 
+                            </div> 
+                        </div> 
+ 
+                    </div> 
+                </div> 
+                <div class="col-md-6"> 
+                    <div class="row"> 
+                        <div class="col-md-12"> 
+                            <div class="title mb-4"> 
+                                <h3>Blue denim shirt</h3> 
+                            </div> 
+                            <div class="category mb-4"> 
+                                <span class="bg-light-gray p-2"><a 
+href="category.html">SHIRT</a></span> 
+                            </div> 
+                            <div class="rating d-flex text-danger mb-4"> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="fas fa-star"></i> 
+                                <i class="far fa-star"></i> 
+                                <i class="far fa-star"></i> 
+                            </div> 
+                            <div class="price mb-4"> 
+                                <b><span class="mr-1">₹</span><span>3999</span></b> 
+                            </div> 
+                            <div class="desc "> 
+                                <p> 
+                                    Blue denim is a durable cotton fabric known for its iconic indigo hue, originally created for workwear and now a global fashion staple.Indigo dye's unique properties give denim its classic blue color and desirable fading characteristics. Blue denim's origins in durable labor wear favored the long-lasting indigo dye for its robustness. Synthetic indigo dye is used today to ensure a consistent and vibrant blue shade in denim fabrics. 
+                                </p> 
+                            </div> 
+                            <div class="qty_section border-top pt-2 mb-4"> 
+                                <label>Quantitiy</label> 
+                                <div> 
+                                    <div class="mb-0 w-100"> 
+                                        <input class="quantity text-center" min="0" max="10" 
+name="quantity" value="1" 
+                                            type="number"> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                            <div class="buy"> 
+                                <a href="file:///C:/Users/HI/Downloads/cart%20page5.html" class="btn btn-primary shadow">Add to 
+Cart</a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+ 
+            <!-- ----------------related products starts here---------- --> 
+
+
+
+
+            <section class="related_products py-5 my-5" id="related_products"> 
+                <div class="title"> 
+                    <h3>Related Products</h3> 
+                </div> 
+ 
+                <div class="row mt-5"> 
+                    <div class="col-md-4 col-6"> 
+                        <div class="border border-dark rounded shadow text-center p-3"> 
+                            <div class="mb-4"> 
+                                <img src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000015152736-Blue-INDIGO-1000015152736_01-2100.jpg" class="img img-fluid" 
+alt="image"> 
+                            </div> 
+                            <div> 
+                                <a href="javascript:;"> 
+                                    <h5>Blue Denim Shirt</h5> 
+                                </a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 col-6"> 
+                        <div class="border border-dark rounded shadow text-center p-3"> 
+                            <div class="mb-4"> 
+                                <img src="data:image/jpeg;base64,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" class="img img-fluid" 
+alt="image"> 
+                            </div> 
+                            <div> 
+                                <a href="javascript:;"> 
+                                    <h5>Blue Denim For Women </h5> 
+                                </a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="col-md-4 col-6"> 
+                        <div class="border border-dark rounded shadow text-center p-3"> 
+                            <div class="mb-4"> 
+                                <img src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/max-new/1000015188500-Blue-DARKBLUE-1000015188500_01-2100.jpg" class="img img-fluid" 
+alt="image"> 
+                            </div> 
+ 
+                            <div> 
+                                <a href="javascript:;"> 
+                                    <h5>Blue Denim Pant For Men</h5> 
+                                </a> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </section> 
+            <!-- ----------------related products ends here---------- --> 
+        </div> 
+    </section> 
+ 
+    <!-- ==============product detail ends here============== -->
+
+
+
+
+
+  <!-- ==============feature starts here============== --> 
+  <section class="feature py-5 mt-5" id="feature"> 
+    <div class="container"> 
+      <div class="section_title text-center mb-5"> 
+        <h1 class="text-capitalize">Our Features</h1> 
+      </div> 
+      <div class="row text-blue"> 
+        <div class="col-md-4 col-12 shadow p-3"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-shipping-fast fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>Free Shipping Method</h3> 
+              </div> 
+            </div> 
+            <div> 
+               
+            </div> 
+          </div> 
+        </div> 
+        <div class="col-md-4 col-12 shadow p-3 mt-small-5 mb-small-5"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-lock fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>Secure Payment System</h3> 
+              </div> 
+            </div> 
+            <div> 
+             
+            </div> 
+          </div> 
+        </div> 
+        <div class="col-md-4 col-12 shadow p-3"> 
+          <div class="text-center"> 
+            <div class="mb-4"> 
+              <i class="fas fa-headphones fa-3x mb-3 pt-2"></i> 
+              <div> 
+                <h3>24/7 Support</h3> 
+              </div> 
+            </div> 
+            <div> 
+               
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+ 
+  <!-- ==============feature ends here============== -->
+
+
+
+  <!-- ==============footer starts here============== --> 
+  <section class="footer_section pt-5 pb-2" id="footer_section"> 
+    <footer> 
+      <div class="container-fluid"> 
+        <div class="row">  
+          <div class="col-md-3 col-6 pl-5 pl-small-15"> 
+            <div class="footer_title"> 
+              <a href="index.html"><img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" width="150px" 
+class="img https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo"></a> 
+            </div> 
+            <div> 
+               ratna is a top branded ecommerce store since 1987 continuos to provide the best clothing and applicences and helping bharat to move forward. 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Quick Links</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About</a></li> 
+                <li><a href="javascript:;">Offers & Discounts</a></li> 
+                <li><a href="javascript:;">Get Coupon</a></li> 
+                <li><a href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>New Products</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Woman Cloth</a></li> 
+                <li><a href="javascript:;">Fashion Accessories</a></li> 
+                <li><a href="javascript:;">Man Accessories</a></li> 
+                <li><a href="javascript:;">Rubber made Toys</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Support</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Frequently Asked Questions</a></li> 
+                <li><a href="javascript:;">Terms & Conditions</a></li> 
+                <li><a href="javascript:;">Privacy Policy</a></li> 
+                <li><a href="javascript:;">Report a Payment Issue</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="border-top"> 
+        <h6 class="text-center mt-3">Copyright ©2025 All rights reserved 
+        </h6> 
+      </div> 
+    </footer> 
+  </section> 
+  <div class="backtop"> 
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button"> 
+      <i class="fas fa-chevron-up text-dark"></i> 
+    </a> 
+  </div> 
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

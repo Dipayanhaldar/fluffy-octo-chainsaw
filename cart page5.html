@@ -1,0 +1,403 @@
+ <!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Cart | Cart page </title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <!-- Navbar -->
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <a class="navbar-brand pl-5" href="#">
+          <img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active"><a class="nav-link" href="file:///C:/Users/HI/Downloads/index1.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20list2.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/catagory%20page4.html#">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/product%20view3.html#">Product Detail</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li>
+          </ul>
+          <div class="cart">
+            <a href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+              <span class="badge badge-pill badge-primary">24</span></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  
+ <style>
+  /* ===== General Styling ===== */
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: #f0f0f0;
+  }
+
+  .navbar,
+  .footer_section {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+  }
+
+  .cart {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+
+  .section_title h1 {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  /* ===== Cart Container ===== */
+  .bg_cart_1 {
+    background: rgba(30, 30, 30, 0.7);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    animation: floatGlow 5s infinite ease-in-out;
+  }
+
+  .bg_cart_1:hover {
+    transform: scale(1.01);
+  }
+
+  .rounded img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .rounded img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  h5 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  p,
+  small,
+  span {
+    color: #dcdcdc !important;
+  }
+
+  .btn-outline-primary {
+    color: #00bfff;
+    border-color: #00bfff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #00bfff;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.4);
+  }
+
+  .list-group-item {
+    background: transparent;
+    color: #e8e8e8;
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, #00b4db, #0083b0);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #0083b0, #00b4db);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.5);
+  }
+
+  /* ===== Animations ===== */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes floatGlow {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+    }
+
+    50% {
+      box-shadow: 0 0 40px rgba(0, 191, 255, 0.5);
+    }
+
+    100% {
+      box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+    }
+  }
+
+  /* Price highlight */
+  #summary,
+  strong {
+    color: #00e6e6;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 230, 230, 0.4);
+  }
+
+  /* Footer text contrast */
+  .footer_section h3,
+  .footer_section a,
+  .footer_section div,
+  .footer_section li {
+    color: #f0f0f0 !important;
+  }
+
+  .footer_section a:hover {
+    color: #00e6e6 !important;
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- ==============cart starts here============== -->
+
+  <section class="cart py-5 my-5" id="cart">
+    <div class="container">
+      <div class="section_title text-center mb-5">
+        <h1 class="text-capitalize">🛒 Your Cart</h1>
+      </div>
+
+      <div class="row bg_cart_1 rounded">
+        <!-- LEFT COLUMN -->
+        <div class="col-md-8 border-right">
+          <div class="mb-3">
+            <div class="pt-4">
+              <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+
+              <!-- ITEM 1 -->
+              <div class="row mb-4 align-items-center">
+                <div class="col-md-5 col-lg-3 col-xl-3">
+                  <div class="rounded mb-3 mb-md-0">
+                    <img class="img-fluid w-100 rounded" src="https://th.bing.com/th/id/OIP.ZZ7TIr6kqHoVsaKaJ3A_GwHaJ4?w=186&h=248&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="Sample">
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-9 col-xl-9">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5>Blue Denim Shirt</h5>
+                        <p class="mb-2 text-uppercase small">Color: Blue</p>
+                        <p class="mb-3 text-uppercase small">Size: M</p>
+                      </div>
+                      <div>
+                        <div class="mb-0 w-100">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="quantity text-center" min="0" max="10" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                        <small class="form-text text-muted text-center">(Note, 1 piece)</small>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <a href="https://thumbs.dreamstime.com/b/remove-item-web-button-icon-vector-illustration-isolated-white-background-remove-item-icon-web-button-119997999.jpg" class="small text-uppercase mr-3 text-danger"><i class="fas fa-trash-alt mr-1"></i> Remove item</a>
+                      </div>
+                      <p class="mb-0"><strong id="summary">₹1985.98</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mb-4">
+
+              <!-- ITEM 2 -->
+              <div class="row mb-4 align-items-center">
+                <div class="col-md-5 col-lg-3 col-xl-3">
+                  <div class="rounded mb-3 mb-md-0">
+                    <img class="img-fluid w-100 rounded" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/675345/33/mod01/fnd/IND/fmt/png/Patch-Graphic-Men's-Regular-Fit-Hoodie" alt="Sample">
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-9 col-xl-9">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5>Red Hoodie</h5>
+                        <p class="mb-2 text-uppercase small">Color: Red</p>
+                        <p class="mb-3 text-uppercase small">Size: M</p>
+                      </div>
+                      <div>
+                        <div class="mb-0 w-100">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                          <input class="quantity text-center" min="0" max="10" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="btn btn-sm btn-outline-primary">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <a href="https://thumbs.dreamstime.com/b/remove-item-web-button-icon-vector-illustration-isolated-white-background-remove-item-icon-web-button-119997999.jpg" class="small text-uppercase mr-3 text-danger"><i class="fas fa-trash-alt mr-1"></i> Remove item</a>
+                      </div>
+                      <p class="mb-0"><strong>₹2555.98</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-4 rounded">
+          <div class="mb-3">
+            <div class="pt-4">
+              <h5 class="mb-3 text-light">Order Summary</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                  <span>Blue Denim Shirt</span>
+                  <span>x1</span>
+                  <span>₹1985.98</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
+                  <span>Red Hoodie</span>
+                  <span>x1</span>
+                  <span>₹2555.98</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-top px-0 mb-3">
+                  <div>
+                    <strong>Total Amount</strong>
+                    <p>(Including GST 18%)</p>
+                    <p>(After Discount)</p>
+                  </div>
+                  <span><strong>₹4541.96</strong></span>
+                </li>
+              </ul>
+              <a href="file:///C:/Users/HI/Downloads/checkout%20page%206.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==============cart ends here============== -->
+
+
+
+
+
+
+  <!-- ==============footer starts here============== --> 
+  <section class="footer_section pt-5 pb-2" id="footer_section"> 
+    <footer> 
+      <div class="container-fluid"> 
+        <div class="row">  
+          <div class="col-md-3 col-6 pl-5 pl-small-15"> 
+            <div class="footer_title"> 
+              <a href="index.html"><img src="https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" width="150px" 
+class="img https://th.bing.com/th/id/OIP.jU5wAtQqYZD2oquXdp5yfgHaDW?w=331&h=158&c=7&r=0&o=7&cb=12&pid=1.7&rm=3" alt="logo"></a> 
+            </div> 
+            <div> 
+               ratna is a top branded ecommerce store since 1987 continuos to provide the best clothing and applicences and helping bharat to move forward. 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Quick Links</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="file:///C:/Users/HI/Downloads/about%20us%20page%208.html">About</a></li> 
+                <li><a href="javascript:;">Offers & Discounts</a></li> 
+                <li><a href="javascript:;">Get Coupon</a></li> 
+                <li><a href="file:///C:/Users/HI/Downloads/contact%20us%20page%209.html">Contact Us</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>New Products</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Woman Cloth</a></li> 
+                <li><a href="javascript:;">Fashion Accessories</a></li> 
+                <li><a href="javascript:;">Man Accessories</a></li> 
+                <li><a href="javascript:;">Rubber made Toys</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+          <div class="col-md-3 col-6"> 
+            <div class="footer_title pt-3 mb-3"> 
+              <h3>Support</h3> 
+            </div> 
+            <div class="footer_links"> 
+              <ul> 
+                <li><a href="javascript:;">Frequently Asked Questions</a></li> 
+                <li><a href="javascript:;">Terms & Conditions</a></li> 
+                <li><a href="javascript:;">Privacy Policy</a></li> 
+                <li><a href="javascript:;">Report a Payment Issue</a></li> 
+              </ul> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+      <div class="border-top"> 
+        <h6 class="text-center mt-3">Copyright ©2025 All rights reserved 
+        </h6> 
+      </div> 
+    </footer> 
+  </section> 
+  <div class="backtop"> 
+    <a id="button" href="#top" class="btn btn-lg btn-outline-danger" role="button"> 
+      <i class="fas fa-chevron-up text-dark"></i> 
+    </a> 
+  </div> 
+  <!-- ==============footer ends here============== -->
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
